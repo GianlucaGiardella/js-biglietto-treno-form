@@ -10,7 +10,7 @@ function generate() {
     const under18Price = (fullPrice * 0.6).toFixed(2);
     const over65Price = (fullPrice * 0.8).toFixed(2);
 
-    if (!isNaN(distance) && !isNaN(userAge)) {
+    if (userName != "" && !isNaN(distance) && !isNaN(userAge)) {
         // userName
         document.querySelector("#user_name").innerHTML = `${userName}`;
 
