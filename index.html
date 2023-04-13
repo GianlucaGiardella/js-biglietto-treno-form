@@ -17,21 +17,51 @@
     <div class="container">
         <h1>calcola il prezzo del tuo biglietto</h1>
         <div class="form">
-            <div class="info">
+            <div class="data">
                 <h3>Nome e Cognome</h3>
                 <input type="text" id="name">
             </div>
-            <div class="info">
+            <div class="data">
                 <h3>Km da percorrere</h3>
                 <input type="text" id="km">
             </div>
-            <div class="info">
+            <div class="data">
                 <h3>Età</h3>
                 <input type="text" id="age">
             </div>
             <div class="buttons">
                 <button onClick="generate()">Genera</button>
-                <button onClick="reset()">Cancella</button>
+                <button onClick="fullReset()">Cancella</button>
+            </div>
+        </div>
+        <div class="ticket">
+            <h2>il tuo biglietto</h2>
+            <div class="passenger">
+                <h3>dettagli passeggeri</h3>
+                <div class="details">
+                    <div class="passenger_name">
+                        <h4>nome passeggero</h4>
+                        <p id="user_name"></p>
+                    </div>
+                    <div class="passenger_info">
+                        <div>
+                            <h4>Offerta</h4>
+                            <p id="offer"></p>
+                        </div>
+                        <div>
+                            <h4>Carrozza</h4>
+                            <p id="carriage"></p>
+                        </div>
+                        <div>
+                            <h4>Codice CP</h4>
+                            <p id="code_cp"></p>
+                        </div>
+                        <div>
+                            <h4>Costo biglietto</h4>
+                            <p id="ticket_price"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -10,41 +10,122 @@ body {
 }
 
 .container {
-    width: 70%;
-    margin: 3rem auto;
+    width: 75%;
+    margin: 2rem auto;
+}
+
+h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
 }
 
 h1 {
     color: white;
     text-align: center;
-    text-transform: uppercase;
     font-weight: 900;
+    margin-bottom: 2rem;
 }
 
 .form {
-    background-color: white;
+    padding: 1.5rem 0;
+    margin-bottom: 3rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 2px 4px 8px black;
 }
 
-.form .info {
+.form .data {
     text-align: center;
     flex: 0 0 calc(100% / 3);
+    margin-bottom: 3.5rem;
 }
 
-.info h3 {
+.data h3 {
     font-weight: 400;
-    margin: 1rem 0;
     color: #B91450;
+    margin-bottom: 1.5rem;
 }
 
-.info input {
-    border-color: #B91450;
+.data input[type=text] {
+    width: 60%;
+    padding: 10px 16px;
+    border-radius: 0.4rem;
+    border: 2px solid #B91450;
 }
 
 .form .buttons {
     flex: 0 0 100%;
-    margin: 2rem 0 1rem;
     text-align: center;
+}
+
+.form .buttons button {
+    margin-inline: 1rem;
+    font-size: 1.2rem;
+    padding: 10px 16px;
+    color: #B91450;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+}
+
+.form .buttons button:hover {
+    border: 1px solid #EB984F;
+}
+
+.ticket {
+    display: none;
+}
+
+.ticket.show {
+    display: block;
+}
+
+.ticket h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.passenger {
+    padding: 1.5rem;
+    background-color: white;
+}
+
+.passenger h3 {
+    font-size: 1.5rem;
+}
+
+.details {
+    display: flex;
+}
+
+.details .passenger_name {
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 900;
+    background-color: gray;
+}
+
+.details .passenger_info {
+    height: 9rem;
+    flex: 1 0 0;
+    display: flex;
+    padding: 1.5rem;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+
+.details .passenger_name h4 {
+    margin-bottom: 1rem;
+}
+
+.details .passenger_info div {
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
