@@ -16,6 +16,7 @@
 <body>
     <div class="container">
         <h1>calcola il prezzo del tuo biglietto</h1>
+
         <div class="form">
             <div class="data">
                 <h3>Nome e Cognome</h3>
@@ -31,9 +32,10 @@
             </div>
             <div class="buttons">
                 <button onClick="generate()">Genera</button>
-                <button onClick="fullReset()">Cancella</button>
+                <button onClick="cancel()">Cancella</button>
             </div>
         </div>
+
         <div class="ticket">
             <h2>il tuo biglietto</h2>
             <div class="passenger">
@@ -50,7 +52,7 @@
                         </div>
                         <div>
                             <h4>Carrozza</h4>
-                            <p id="carriage"></p>
+                            <p id="wagon"></p>
                         </div>
                         <div>
                             <h4>Codice CP</h4>

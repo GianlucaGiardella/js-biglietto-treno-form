@@ -1,6 +1,6 @@
 const ticket = document.querySelector(".ticket").classList;
 
-// generator event
+// generator
 function generate() {
     const pricePerKm = 0.21;
     const userName = document.getElementById("name").value;
@@ -26,8 +26,8 @@ function generate() {
             document.querySelector("#ticket_price").innerHTML = `${fullPrice}€`;
         }
 
-        // carriage
-        document.querySelector("#carriage").innerHTML = Math.floor(Math.random() * 10) + 1;
+        // wagon
+        document.querySelector("#wagon").innerHTML = Math.floor(Math.random() * 10) + 1;
 
         // code_cp
         document.querySelector("#code_cp").innerHTML = Math.floor(Math.random() * 100000) + 1;
@@ -44,11 +44,9 @@ function reset() {
     document.getElementById("age").value = "";
 }
 
-//fullReset
-function fullReset() {
+// cancel
+function cancel() {
     ticket.remove("show");
-    document.getElementById("name").value = "";
-    document.getElementById("km").value = "";
-    document.getElementById("age").value = "";
+    reset();
 }
 
